@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mtumilowicz/java-bytecode-invokespecial.svg?branch=master)](https://travis-ci.com/mtumilowicz/java-bytecode-invokespecial)
+[![Build Status](https://travis-ci.com/PolomskiBartlomiej/java-bytecode-invokespecial.svg?branch=master)](https://travis-ci.com/PolomskiBartlomiej/java-bytecode-invokespecial)
 
 # java-bytecode-invokespecial
 The main goal of this project is to show differences between 
@@ -7,11 +7,11 @@ The main goal of this project is to show differences between
 _Reference_: https://www.artima.com/underthehood/invocationP.html
 
 # preface
-* **invokestatic** - When the Java virtual machine invokes a class 
+* **invokestatic** - When the Java invoke.virtual machine invokes a class 
 method, it selects the method to invoke based on the type of the 
 object reference, which is always known at compile-time.
 
-* **invokevirtual** - On the other hand, when the virtual machine 
+* **invokevirtual** - On the other hand, when the invoke.virtual machine 
 invokes an instance method, it selects the method to invoke based 
 on the actual class of the object, which may only be known at run time.
 
@@ -20,7 +20,7 @@ Because Java programs are dynamically linked, references to methods
 initially are symbolic. To resolve a symbolic reference, the JVM 
 locates the method being referred to symbolically and replaces the 
 symbolic reference with a direct reference. A direct reference, 
-such as a pointer or offset, allows the virtual machine to invoke 
+such as a pointer or offset, allows the invoke.virtual machine to invoke 
 the method more quickly if the reference is ever used again in the 
 future.
 

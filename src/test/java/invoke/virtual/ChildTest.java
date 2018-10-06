@@ -1,11 +1,10 @@
+package invoke.virtual;
+
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
-/**
- * Created by mtumilowicz on 2018-09-30.
- */
 public class ChildTest {
 
     @Test
@@ -15,12 +14,12 @@ public class ChildTest {
 
     @Test
     public void locate() {
-        assertThat(new Child().locate(), is("In Parent"));
+        assertThat(new Child().locate(), is("In Child"));
     }
 
     @Test
     public void locate_asParent() {
         Parent asParent = new Child();
-        assertThat(asParent.locate(), is("In Parent"));
+        assertThat(asParent.locate(), is("In Child"));
     }
 }

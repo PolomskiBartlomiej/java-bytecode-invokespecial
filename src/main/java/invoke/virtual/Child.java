@@ -1,8 +1,10 @@
-/**
- * Created by mtumilowicz on 2018-09-30.
- */
+package invoke.virtual;
+
 class Child extends Parent {
+
+    @Override
     String where() {
         return "In Child";
     }
+
 }
