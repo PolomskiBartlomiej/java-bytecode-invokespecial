@@ -15,6 +15,9 @@ object reference, which is always known at compile-time.
 invokes an instance method, it selects the method to invoke based 
 on the actual class of the object, which may only be known at run time.
 
+* **invokeinterface** - The invokeinterface opcode performs the same function as invokevirtual.
+The only difference is that invokeinterface is used when the reference is of an interface type.
+
 # dynamic linking
 Because Java programs are dynamically linked, references to methods 
 initially are symbolic. To resolve a symbolic reference, the JVM 
